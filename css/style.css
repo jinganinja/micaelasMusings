@@ -5,6 +5,10 @@ body {
     font-weight: 325;
 }
 
+strong {
+    font-weight: 400;
+}
+
 .page_title {
     background-color: #B7D1DA;
     padding: 2% 5%;
@@ -20,4 +24,13 @@ body {
     margin: 2% 25%;
     font-size: 1.1rem;
     font-family: Open Sans;
+}
+
+.footer_content {
+    padding: 0.5% 10%;
+    font-size: 1.1rem;
+    color: #111;
+    background-color: #F9F9F9;
+    position: absolute;
+    bottom: 0;
 }
