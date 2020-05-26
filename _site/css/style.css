@@ -4,6 +4,11 @@ body {
     color: #666;
     margin: 0;
     font-weight: 325;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 74px;
+    min-height: 80vh;
 }
 
 strong {
@@ -30,43 +35,116 @@ strong {
     margin: 2% 25%;
     font-size: 1.1rem;
     font-family: Open Sans;
+    display: block;
 }
 
 .footer_content {
-    padding: 0.5% 10%;
+    padding: 1% 10% 0.5% 10%;
     font-size: 1.1rem;
     color: #111;
     background-color: #F9F9F9;
     position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
 }
 
-/* MENU BUTTON RELATED CSS */
-.hamburger_menu_button {
+.footer-col {
     display: inline-block;
-    cursor: pointer;
-  }
+}
+
+.footer_content p {
+    margin: 0.5%;
+}
+
+.footer-col img {
+    width: 1.5%;
+    padding: 0 1% 0.5% 1%;
+    vertical-align: middle;
+}
+
+.wrapper {
+    display: inline-block;
+    width: 8%;
+    padding-bottom: 1%;
+}
+
+/* TOP NAV BAR RELATED CSS */
+.top_nav_bar {
+  display: inline-block;
+  background-color: #B7D1DA;
+  padding: 1% 0.5% 0% 0.5%;
+  width: 99%;
+  font-size: 1.1rem;
+}
+
+.top_nav_bar a {
+  padding: 0 1%;
+  color: #666;
+  text-decoration: none;
+  font-weight: 325;
+}
+
+.top_nav_bar a:hover {
+  font-weight: 400;
+}
+
+.home_page_images {
+    margin-top: 1%;
+    opacity: 0.85;
+}
+
+.image_row {
+  display: flex;
+}
+
+.bottom_row_image {
+  width: 25%;
+}
+
+.about_me_content {
+    display: flex;
+}
+
+.about_me_content p {
+    width: 100%;
+}
+.about_me_content img {
+    width: 80%;
+    padding: 1%;
+    display: block;
+    border-radius: 5%;
+}
+
+.posts {
+    display: inline-block;
+}
+
+.post_title {
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: American Typewriter;
+    position: absolute;
+    z-index: 1000;
+    left: 1%;
+    bottom: 50%;
+    padding: 1%;
+}
+
+.post_link {
+    margin: 4.5%;
+    position: relative;
+    width: 40%;
+    text-decoration: none;
+}
   
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 2px;
-    background-color: #666;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
+.post_link img {
+    width: 40%;
+}
+
+.post_link:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
   
-  /* Rotate first bar */
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {
-    opacity: 0;
-  }
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-  }
